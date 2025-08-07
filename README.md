@@ -2,6 +2,8 @@
 
 A simple yet powerful Todo List application built with Angular that helps you manage your daily tasks efficiently.
 
+Live Demo: https://todo-project-angular.vercel.app/
+
 ## Features
 
 - **Add New Tasks**: Easily add new todo items to your list
