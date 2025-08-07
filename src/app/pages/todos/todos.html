@@ -1,0 +1,38 @@
+<div class="tasks-container">
+  <app-add-todo></app-add-todo>
+  <div class="title-btn-div">
+    <h1>Today's Tasks</h1>
+    <button class="delete-btn" (click)="todoService.clearList('todos')">
+      Clear
+    </button>
+  </div>
+  <table>
+    <thead class="table-head">
+      <tr>
+        <th class="th-item">Title</th>
+        <th class="th-item">Creation Date</th>
+        <th class="th-item">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @if(todoService.todosList().length==0){
+      <span class="no-tasks-message">No Tasks Yet</span>
+      } @for (item of todoService.todosList(); track item.id) {
+      <tr class="todo-task">
+        <td class="task-title">{{ item.title }}</td>
+        <td class="task-date">
+          {{ item.creationDate | date : "d - MMMM - yyyy" }}
+        </td>
+        <td class="task-actions">
+          <button class="done-btn" (click)="todoService.addToCompleted(item)">
+            Done
+          </button>
+          <button class="delete-btn" (click)="todoService.delteTask(item.id)">
+            Delete
+          </button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
