@@ -64,5 +64,6 @@ A simple yet powerful Todo List application built with Angular that helps you ma
 - `todo.service.ts`: Handles all todo-related operations and state management
 - `todos.component`: Displays and manages active todos
 - `completed-tasks.component`: Shows completed tasks
+- `add-todo.component`: Handels adding a new task to the todo list
 - `app.component`: Main application container with navigation
 
