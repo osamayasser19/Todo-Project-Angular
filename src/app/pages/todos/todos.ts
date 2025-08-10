@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { TodoService } from '../../services/todo-service';
 import { DatePipe } from '@angular/common';
-import { AddTodo } from "../add-todo/add-todo";
+import { AddTodo } from '../add-todo/add-todo';
 
 @Component({
   selector: 'app-todos',

@@ -14,9 +14,9 @@
       </tr>
     </thead>
     <tbody>
-      @if(todoService.completedTodos().length==0){
+      @if(todoService.getCompletedTodos().length==0){
       <span class="no-tasks-message">No Completed Tasks Yet</span>
-      } @for (item of todoService.completedTodos(); track item.id) {
+      } @for (item of todoService.getCompletedTodos(); track item.id) {
       <tr class="todo-task">
         <td class="task-title">{{ item.title }}</td>
         <td class="task-date">

@@ -10,4 +10,5 @@ import { DatePipe } from '@angular/common';
 })
 export class CompletedTodos {
   todoService = inject(TodoService);
+  
 }
