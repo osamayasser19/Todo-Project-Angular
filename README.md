@@ -1,59 +1,71 @@
-# TodosFinal
+# Todo List Application - Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.4.
+A simple yet powerful Todo List application built with Angular that helps you manage your daily tasks efficiently.
 
-## Development server
+Live Demo: https://todo-project-angular.vercel.app/
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+- **Add New Tasks**: Easily add new todo items to your list
+- **Mark as Done**: Complete tasks and move them to the "Completed Tasks" section
+- **Delete Tasks**: Remove individual tasks you no longer need
+- **Clear All**: Option to clear the entire todo list at once
+- **Two Views**:
+  - Active Tasks: Shows all pending todos
+  - Completed Tasks: Displays all finished tasks
+- **Responsive Design**: Works well on both desktop and mobile devices
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Technologies Used
 
-## Code scaffolding
+- Angular (v16+)
+- TypeScript
+- HTML5 & CSS3
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Installation
 
-```bash
-ng generate component component-name
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/osamayasser19/Todo-Project-Angular.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Todo-Project-Angular
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   ng serve
+   ```
+5. Open your browser and visit `http://localhost:4200`
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Usage
 
-```bash
-ng generate --help
-```
+1. **Adding a Task**:
+   - Type your task in the input field
+   - Press Enter or click the "Add" button
 
-## Building
+2. **Completing a Task**:
+   - Click the "Done" button next to any task
+   - The task will move to the Completed Tasks page
 
-To build the project run:
+3. **Deleting a Task**:
+   - Click the "Delete" button to remove a task permanently
 
-```bash
-ng build
-```
+4. **Viewing Completed Tasks**:
+   - Navigate to the "Completed Tasks" tab to see all finished items
+   - You can mark tasks as "Undone" to return them to the active list
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+5. **Clearing All Tasks**:
+   - Use the "Clear All" button to remove all tasks at once
 
-## Running unit tests
+## Project Structure
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- `todo.service.ts`: Handles all todo-related operations and state management
+- `todos.component`: Displays and manages active todos
+- `completed-tasks.component`: Shows completed tasks
+- `add-todo.component`: Handels adding a new task to the todo list
+- `app.component`: Main application container with navigation
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
